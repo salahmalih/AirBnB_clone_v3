@@ -9,7 +9,7 @@ from flasgger.utils import swag_from
 
 @app_views.route('/users', methods=['GET'], strict_slashes=False)
 @swag_from('documentation/user/all_users.yml')
-def get__all_users():
+def get_all_users():
     """
     Retrieves the list of all user objects
     or a specific user
